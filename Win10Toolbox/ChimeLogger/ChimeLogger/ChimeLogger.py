@@ -31,7 +31,7 @@ elif platform == "win32":
     # creates folder on Desktop with username, date, and time
     shutil.copy2(chimeFolder + "\\ChimePluginDebug.txt.0", chimeDesktop + "\\ChimePluginDebug.txt.0")
     # copies log file to Chime folder on Desktop
-    f= open(chimeDesktop + "\\systemInfo.txt", "a+")
+    f= open(chimeDesktop + "\\systemInfo.txt", "a")
     f.write(platform.platform())
 
     f.write()
